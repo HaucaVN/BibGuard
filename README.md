@@ -4,6 +4,8 @@
 
 AI coding assistants and writing tools often hallucinate plausible-sounding but non-existent references. **BibGuard** verifies the existence of every entry against real-world databases (arXiv, Google Scholar) and uses advanced LLMs to double-check that the cited paper actually supports your claims.
 
+🚀 You can checkout beta branch for more experimental features.
+
 ## 🛡 Why BibGuard?
 
 -   **🚫 Stop Hallucinations**: Instantly flag citations that don't exist or have mismatched metadata.
